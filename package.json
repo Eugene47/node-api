@@ -1,0 +1,25 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "node-api",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "api",
+    "node"
+  ],
+  "author": "Yevgeniy Chernov",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.4"
+  },
+  "devDependencies": {
+    "db-migrate": "^0.10.5",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.12"
+  }
+}
