@@ -37,10 +37,11 @@ router.route('/posts')
         console.log(req.body.name);
 
 		post.save(function(err) {
-			if (err)
+			if (err){
 				res.send(err);
-
-			res.json({ message: 'Post created!' });
+			}else{
+				res.json({ message: 'Post created!' });
+			}
 		});
 
 		
