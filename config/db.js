@@ -1,5 +1,13 @@
-var dbName = 'testdb'
+var mysql = require('mysql');
 
-module.exports = {
-    'url' : 'mongodb://localhost:27017/' + dbName
-};
+var connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "toor",
+  database: 'node'
+});
+
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Connected!');
+});
